@@ -1,0 +1,358 @@
+/* TYPE STYLING FOR THE ENTIRE DOCUMENT */
+body {
+    font-family: Barlow;
+}
+
+h1 {
+    color: #552FA7;
+    font-weight: 600;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    width: 100%;
+    font-family: Barlow;
+}
+
+nav {
+    background-color: black;
+    z-index: 5;
+}
+
+#navbarNav {
+    margin-left: 40%;
+}
+
+/* JUMBOTRON */
+.jumbotron {
+    position:relative;
+    background-image: url(./assets/bkgd.jpg);
+    background-position: 10% 20%;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    /* text */
+    text-align: center;
+}
+
+#jumboContent {
+    position:absolute;
+    top:50%;
+    left:50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#line1 {
+    display: block;
+    margin: auto;
+    color: white;
+    font-weight: 500;
+    font-size: 8em;
+}
+
+#line2 {
+    margin-top: 0;
+    font-weight: 700;
+    color: white;
+    font-size: 10em;
+}
+
+#line2 span {
+    color: #46E6FF;
+}
+
+.jumbotron p {
+    margin-top: 1em;
+    color: white;
+    font-size: 2em;
+}
+
+.jumbotron button {
+    margin-top: 2em;
+    background-color: transparent;
+    border: 5px solid #46E6FF;
+    color: white;
+    width: 15em;
+    height: 3em;
+    font-weight: 500;
+}
+
+/* ABOUT */
+#aboutMe {
+    padding-top: 10vh;
+    padding-bottom: 8vh;
+}
+
+#aboutMe img {
+    float: right;
+    width: 90%;
+}
+
+/* SKILLS */
+#mySkills {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding-top: 3vh;
+    padding-bottom: 3em;
+    background-color: rgba(70, 230, 255, .2);
+}
+
+#mySkills h1 {
+    padding-top: .7em;
+    padding-bottom: .5em;
+    text-align: center;
+    color: black;
+    font-size: 14mm;
+}
+
+/* SKILLS ANIMATION */
+#html:hover {
+    animation: pop 0.3s linear 1;
+}
+
+@keyframes pop{
+    50%  {transform: scale(1.2);}
+}
+  
+#css:hover {
+    animation: pop 0.3s linear 1;
+}
+
+#js:hover {
+    animation: pop 0.3s linear 1;
+}
+
+#boot:hover {
+    animation: pop 0.3s linear 1;
+}
+
+#git:hover {
+    animation: pop 0.3s linear 1;
+}
+
+#react:hover {
+    animation: pop 0.3s linear 1;
+}
+
+#cc:hover {
+    animation: pop 0.3s linear 1;
+}
+
+#figma:hover {
+    animation: pop 0.3s linear 1;
+}
+
+
+/* PORTFOLIO */
+#portfolio {
+    padding-top: 8vh;
+    padding-bottom: 6vh;
+}
+
+#portfolio h1 {
+    padding-bottom: 1em;
+}
+
+.portfolioItem {
+    border: 3px solid #E2E2E2;
+}
+
+#portfolioRow2 {
+    margin-top: 2em;
+}
+
+/* PORTFOLIO OVERLAY */
+.portfolioOverlay {
+    position: absolute;
+    background-color: #4657FF;
+    opacity: 0;
+    width: auto;
+    height: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition-property: opacity;
+    transition-duration: .5s;
+    transition-timing-function: linear; 
+    z-index: 3;
+}
+    
+.portfolioOverlay:hover {
+    opacity: 1;
+}
+
+.portfolioOverlay:focus {
+    opacity: 1;
+}
+
+.portfolioCaption {
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    color: white;
+    opacity: 0;
+    font-size: 6mm;
+    text-align: center;
+}
+
+.portfolioCaption:hover {
+    opacity: 1;
+}
+
+.portfolioCaption:focus {
+    opacity: 1;
+}
+
+.portfolioCaption p {
+    color: white;
+    padding: 2%;
+}
+
+.portfolioCaption h4 {
+    font-size: 8mm;
+    font-weight: 700;
+}
+
+.portfolioCaption a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 6mm;
+}
+
+.portfolioCaption a:hover {
+    text-decoration: underline;
+}
+
+/* CONTACT */
+#contact {
+    background-image: url("./assets/footer.jpg");
+    background-size: cover;
+    width: 100%;
+    margin-top: 5em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+#contact h1 {
+    text-align: center;
+    color: #8146FF;
+}
+
+form {
+    width: 50%;
+    margin: auto;
+    padding-top: 2em;
+}
+
+#exampleFormControlTextarea1 {
+    height: 8em;
+}
+
+/* FOOTER */
+#footer {
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    background-color: #4657FF;
+    color: white;
+}
+
+/* MEDIA QUERIES */
+
+/* 576PX */
+@media (max-width: 576px) {
+
+    /* JUMBOTRON */
+    .jumbotron {
+        padding-top: 5em;
+        width: 100vw;
+        height: 123vh;
+    }
+
+    #line1 {
+        font-size: 4em;
+    }
+    
+    #line2 {
+        margin-top: 0;
+        font-size: 6em;
+    }
+        
+    #line2 span {
+        color: #46E6FF;
+    }
+        
+    .jumbotron p {
+        margin-top: 1em;
+        font-size: 1.5em;
+    }
+        
+    .jumbotron button {
+        margin-top: 1em;
+    }
+
+    /* ABOUT */
+    #aboutMe {
+        padding-top: 1em;
+    }
+
+    #aboutMe img {
+        width: 100%;
+    }
+
+    /* SKILLS */
+    #mySkills {
+        padding-left: 2em;
+        padding-right: 1em;
+    }
+
+    #mySkills h1 {
+        padding-bottom: .5em;
+    }
+        
+    #html {
+        width: 25%;
+        padding-bottom: 1em;
+    }
+
+    #css {
+        width: 25%;
+    }
+
+    #js {
+        width: 25%;
+    }
+
+    #boot {
+        width: 25%;
+        padding-bottom: 1em;
+    }
+
+    #git {
+        width: 25%;
+    }
+
+    #react {
+        width: 25%;
+    }
+
+    #cc {
+        width: 25%
+    }
+
+    #figma {
+        width: 25%;
+    }
+
+    /* PORTFOLIO */
+    #portfolio {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
