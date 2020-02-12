@@ -158,19 +158,6 @@ nav {
     padding-bottom: 1em;
 }
 
-.portfolioItem {
-    border: 3px solid #E2E2E2;
-}
-
-#portfolioRow2 {
-    margin-top: 2em;
-}
-
-#portfolioRow3 {
-    margin-top: 2em;
-}
-
-
 /* PORTFOLIO OVERLAY */
 .portfolioOverlay {
     position: absolute;
