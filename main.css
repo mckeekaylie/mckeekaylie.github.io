@@ -166,6 +166,11 @@ nav {
     margin-top: 2em;
 }
 
+#portfolioRow3 {
+    margin-top: 2em;
+}
+
+
 /* PORTFOLIO OVERLAY */
 .portfolioOverlay {
     position: absolute;
@@ -211,7 +216,6 @@ nav {
 
 .portfolioCaption p {
     color: white;
-    padding: 2%;
 }
 
 .portfolioCaption h4 {
