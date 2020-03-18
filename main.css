@@ -288,7 +288,7 @@ form {
     .navbar-brand {
         margin-left: 0;
     }
-    
+
     #navbarNav {
         margin: 0;
     }
@@ -391,7 +391,7 @@ form {
 
     /* PORTFOLIO */
     #portfolio {
-        padding-top: 1em;
-        padding-bottom: 1em;
+        padding-top: 2em;
+        padding-bottom: 2em;
     }
 }
