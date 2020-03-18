@@ -21,7 +21,7 @@ nav {
 }
 
 #navbarNav {
-    margin-left: 40%;
+    margin-left: 35%;
 }
 
 /* JUMBOTRON */
@@ -96,7 +96,6 @@ nav {
 /* SKILLS */
 #mySkills {
     margin-top: 2em;
-    margin-bottom: 2em;
     padding-top: 3vh;
     padding-bottom: 3em;
     background-color: rgba(70, 230, 255, .2);
@@ -107,7 +106,6 @@ nav {
     padding-bottom: .5em;
     text-align: center;
     color: black;
-    font-size: 14mm;
 }
 
 /* SKILLS ANIMATION */
@@ -139,12 +137,36 @@ nav {
     animation: pop 0.3s linear 1;
 }
 
+#node:hover {
+    animation: pop 0.3s linear 1;
+}
+
 #cc:hover {
     animation: pop 0.3s linear 1;
 }
 
 #figma:hover {
     animation: pop 0.3s linear 1;
+}
+
+/* CERTIFICATIONS */
+#certifications {
+    background-image: url("./assets/certificates.jpg");
+    background-position: 20% 20%;
+    text-align: center;
+    padding: 3em;
+}
+
+#certifications h1 {
+    padding-top: .7em;
+    padding-bottom: .5em;
+    text-align: center;
+}
+
+#carouselExampleIndicators {
+    display: block;
+    margin: auto;
+    width: 50%;
 }
 
 
@@ -309,37 +331,47 @@ form {
     }
         
     #html {
-        width: 25%;
+        width: 30%;
         padding-bottom: 1em;
     }
 
     #css {
-        width: 25%;
+        width: 30%;
     }
 
     #js {
-        width: 25%;
+        width: 30%;
     }
 
     #boot {
-        width: 25%;
+        width: 30%;
         padding-bottom: 1em;
     }
 
     #git {
-        width: 25%;
+        width: 30%;
+        padding-bottom: 1em;
     }
 
     #react {
-        width: 25%;
+        width: 30%;
+    }
+
+    #node {
+        width: 30%;
     }
 
     #cc {
-        width: 25%
+        width: 30%
     }
 
     #figma {
-        width: 25%;
+        width: 30%;
+    }
+
+    /* CERTIFICATIONS */
+    #carouselExampleIndicators {
+        width: 100%;
     }
 
     /* PORTFOLIO */
@@ -347,3 +379,4 @@ form {
         padding-top: 1em;
         padding-bottom: 1em;
     }
+}
