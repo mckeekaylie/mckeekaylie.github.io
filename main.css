@@ -20,19 +20,22 @@ nav {
     z-index: 5;
 }
 
+.navbar-brand {
+    margin-left: 15%;
+}
+
 #navbarNav {
     margin-left: 35%;
 }
 
 /* JUMBOTRON */
 .jumbotron {
-    position:relative;
+    position: relative;
     background-image: url(./assets/bkgd.jpg);
     background-position: 10% 20%;
     background-size: cover;
     width: 100vw;
     height: 100vh;
-    /* text */
     text-align: center;
 }
 
@@ -155,10 +158,10 @@ nav {
     background-position: 20% 20%;
     text-align: center;
     padding: 3em;
+    padding-bottom: 3.5em;
 }
 
 #certifications h1 {
-    padding-top: .7em;
     padding-bottom: .5em;
     text-align: center;
 }
@@ -172,8 +175,8 @@ nav {
 
 /* PORTFOLIO */
 #portfolio {
-    padding-top: 8vh;
-    padding-bottom: 6vh;
+    padding-top: 5em;
+    padding-bottom: 7em;
 }
 
 #portfolio h1 {
@@ -248,7 +251,6 @@ nav {
     background-image: url("./assets/footer.jpg");
     background-size: cover;
     width: 100%;
-    margin-top: 5em;
     padding-top: 3em;
     padding-bottom: 3em;
 }
@@ -281,6 +283,19 @@ form {
 
 /* 576PX */
 @media (max-width: 576px) {
+
+    /* NAV */
+    .navbar-brand {
+        margin-left: 0;
+    }
+    
+    #navbarNav {
+        margin: 0;
+    }
+
+    .navbar-collapse {
+        text-align: center;
+    }
 
     /* JUMBOTRON */
     .jumbotron {
