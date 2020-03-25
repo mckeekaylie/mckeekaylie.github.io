@@ -140,6 +140,10 @@ nav {
     animation: pop 0.3s linear 1;
 }
 
+#ts:hover {
+    animation: pop 0.3s linear 1;
+}
+
 #node:hover {
     animation: pop 0.3s linear 1;
 }
@@ -346,42 +350,46 @@ form {
     }
         
     #html {
-        width: 30%;
+        width: 25%;
         padding-bottom: 1em;
     }
 
     #css {
-        width: 30%;
+        width: 25%;
     }
 
     #js {
-        width: 30%;
+        width: 25%;
     }
 
     #boot {
-        width: 30%;
+        width: 25%;
         padding-bottom: 1em;
     }
 
     #git {
-        width: 30%;
+        width: 25%;
         padding-bottom: 1em;
     }
 
     #react {
-        width: 30%;
+        width: 25%;
+    }
+
+    #ts {
+        width: 25%;
     }
 
     #node {
-        width: 30%;
+        width: 25%;
     }
 
     #cc {
-        width: 30%
+        width: 25%;
     }
 
     #figma {
-        width: 30%;
+        width: 25%;
     }
 
     /* CERTIFICATIONS */
