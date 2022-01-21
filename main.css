@@ -128,6 +128,18 @@ nav {
     animation: pop 0.3s linear 1;
 }
 
+#cs:hover {
+    animation: pop 0.3s linear 1;
+}
+
+#ang:hover {
+    animation: pop 0.3s linear 1;
+}
+
+#sql:hover {
+    animation: pop 0.3s linear 1;
+}
+
 #boot:hover {
     animation: pop 0.3s linear 1;
 }
@@ -187,67 +199,16 @@ nav {
     padding-bottom: 1em;
 }
 
-/* PORTFOLIO OVERLAY */
-.portfolioOverlay {
-    position: absolute;
-    background-color: #4657FF;
-    opacity: 0;
-    width: auto;
-    height: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transition-property: opacity;
-    transition-duration: .5s;
-    transition-timing-function: linear; 
-    z-index: 3;
-}
-    
-.portfolioOverlay:hover {
-    opacity: 1;
-}
-
-.portfolioOverlay:focus {
-    opacity: 1;
-}
-
-.portfolioCaption {
-    width: 100%;
+.caption {
+    background-color: #8146FF;
+    color: white;
     height: 100%;
-    padding: 1em;
+}
+
+
+/* PORTFOLIO */
+#portfolio a {
     color: white;
-    opacity: 0;
-    font-size: 6mm;
-    text-align: center;
-}
-
-.portfolioCaption:hover {
-    opacity: 1;
-}
-
-.portfolioCaption:focus {
-    opacity: 1;
-}
-
-.portfolioCaption p {
-    color: white;
-}
-
-.portfolioCaption h4 {
-    font-size: 8mm;
-    font-weight: 700;
-}
-
-.portfolioCaption a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 6mm;
-}
-
-.portfolioCaption a:hover {
-    text-decoration: underline;
 }
 
 /* CONTACT */
@@ -339,6 +300,20 @@ form {
         width: 100%;
     }
 
+    /* CERTIFICATIONS */
+    #carouselExampleIndicators {
+        width: 100%;
+    }
+
+    /* PORTFOLIO */
+    #portfolio {
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
+}
+
+@media(max-width: 767.98px) {
     /* SKILLS */
     #mySkills {
         padding-left: 2em;
@@ -354,11 +329,7 @@ form {
         padding-bottom: 1em;
     }
 
-    #css {
-        width: 25%;
-    }
-
-    #js {
+    #css, #cs, #sql, #ang, #js, #react, #ts, #cc, #figma {
         width: 25%;
     }
 
@@ -370,36 +341,5 @@ form {
     #git {
         width: 25%;
         padding-bottom: 1em;
-    }
-
-    #react {
-        width: 25%;
-    }
-
-    #ts {
-        width: 25%;
-    }
-
-    #node {
-        width: 25%;
-    }
-
-    #cc {
-        width: 25%;
-    }
-
-    #figma {
-        width: 25%;
-    }
-
-    /* CERTIFICATIONS */
-    #carouselExampleIndicators {
-        width: 100%;
-    }
-
-    /* PORTFOLIO */
-    #portfolio {
-        padding-top: 2em;
-        padding-bottom: 2em;
     }
 }
