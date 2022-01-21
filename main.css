@@ -313,6 +313,7 @@ form {
 
 }
 
+/* 768px */
 @media(max-width: 767.98px) {
     /* SKILLS */
     #mySkills {
@@ -323,22 +324,12 @@ form {
     #mySkills h1 {
         padding-bottom: .5em;
     }
-        
-    #html {
-        width: 25%;
-        padding-bottom: 1em;
-    }
 
-    #css, #cs, #sql, #ang, #js, #react, #ts, #cc, #figma {
+    #css, #cs, #ang, #js, #react, #ts, #cc, #figma {
         width: 25%;
     }
 
-    #boot {
-        width: 25%;
-        padding-bottom: 1em;
-    }
-
-    #git {
+    #boot, #git, #sql, #html {
         width: 25%;
         padding-bottom: 1em;
     }
