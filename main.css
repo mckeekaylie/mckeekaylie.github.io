@@ -8,6 +8,10 @@ h1 {
     font-weight: 600;
 }
 
+.badge {
+    background-color: #552FA7;
+}
+
 /* NAVBAR */
 .navbar {
     position: fixed;
