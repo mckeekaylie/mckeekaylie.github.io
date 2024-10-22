@@ -8,14 +8,22 @@ h1 {
     font-weight: 600;
 }
 
+.main-header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+}
+
 /* BUTTONS */
 .btn-primary, .btn-primary:visited {
-    background-color: #552FA7;
+    background-color: #4657FF;
     border-color: transparent;
 }
 
 .btn-primary:hover, .btn-primary:active {
-    background-color: #4657FF;
+    background-color: #552FA7;
     border-color: transparent;
 }
 
@@ -40,8 +48,7 @@ nav {
 }
 
 /* JUMBOTRON */
-.jumbotron {
-    position: relative;
+.introWrapper {
     background-image: url(./assets/bkgd.jpg);
     background-position: 10% 20%;
     background-size: cover;
@@ -80,13 +87,13 @@ nav {
     color: #46E6FF;
 }
 
-.jumbotron p {
+.introWrapper p {
     margin-top: 1em;
     color: white;
     font-size: 2em;
 }
 
-.jumbotron button {
+.introWrapper button {
     margin-top: 2em;
     background-color: transparent;
     border: 2px solid #90EE90;
@@ -96,116 +103,20 @@ nav {
     font-weight: 500;
 }
 
-/* ABOUT */
-#aboutMe {
-    padding-top: 10vh;
-    padding-bottom: 8vh;
+.content-wrapper {
+    width: 100vw;
+    height: 100vh;
 }
 
-#aboutMe img {
-    float: right;
-    width: 90%;
+.hexBkgd {
+    background: url(./assets/IMG_2096.PNG);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: center;
+    background-position-y: top;
 }
-
-/* SKILLS */
-#mySkills {
-    margin-top: 2em;
-    padding-top: 3vh;
-    padding-bottom: 3em;
-    background-color: rgba(70, 230, 255, .2);
-}
-
-#mySkills h1 {
-    padding-top: .7em;
-    padding-bottom: .5em;
-    text-align: center;
-    color: black;
-}
-
-/* SKILLS ANIMATION */
-#html:hover {
-    animation: pop 0.3s linear 1;
-}
-
-@keyframes pop{
-    50%  {transform: scale(1.2);}
-}
-  
-#css:hover {
-    animation: pop 0.3s linear 1;
-}
-
-#js:hover {
-    animation: pop 0.3s linear 1;
-}
-
-#cs:hover {
-    animation: pop 0.3s linear 1;
-}
-
-#ang:hover {
-    animation: pop 0.3s linear 1;
-}
-
-#sql:hover {
-    animation: pop 0.3s linear 1;
-}
-
-#boot:hover {
-    animation: pop 0.3s linear 1;
-}
-
-#git:hover {
-    animation: pop 0.3s linear 1;
-}
-
-#react:hover {
-    animation: pop 0.3s linear 1;
-}
-
-#ts:hover {
-    animation: pop 0.3s linear 1;
-}
-
-#node:hover {
-    animation: pop 0.3s linear 1;
-}
-
-#cc:hover {
-    animation: pop 0.3s linear 1;
-}
-
-#figma:hover {
-    animation: pop 0.3s linear 1;
-}
-
-/* CERTIFICATIONS */
-#certifications {
-    background-image: url("./assets/certificates.jpg");
-    background-position: 20% 20%;
-    text-align: center;
-    padding: 3em;
-    padding-bottom: 3.5em;
-}
-
-#certifications h1 {
-    padding-bottom: .5em;
-    text-align: center;
-}
-
-#carouselExampleIndicators {
-    display: block;
-    margin: auto;
-    width: 50%;
-}
-
 
 /* PORTFOLIO */
-#portfolio {
-    padding-top: 5em;
-    padding-bottom: 7em;
-}
-
 #portfolio h1 {
     padding-bottom: 1em;
 }
@@ -216,34 +127,8 @@ nav {
     height: 100%;
 }
 
-
-/* PORTFOLIO */
 #portfolio a {
     color: white;
-}
-
-/* CONTACT */
-#contact {
-    background-image: url("./assets/footer.jpg");
-    background-size: cover;
-    width: 100%;
-    padding-top: 3em;
-    padding-bottom: 3em;
-}
-
-#contact h1 {
-    text-align: center;
-    color: #8146FF;
-}
-
-form {
-    width: 50%;
-    margin: auto;
-    padding-top: 2em;
-}
-
-#exampleFormControlTextarea1 {
-    height: 8em;
 }
 
 /* FOOTER */
@@ -251,7 +136,7 @@ form {
     text-align: center;
     padding-top: 2em;
     padding-bottom: 1em;
-    background-color: #4657FF;
+    background-color: #552FA7;
     color: white;
 }
 
@@ -271,13 +156,6 @@ form {
 
     .navbar-collapse {
         text-align: center;
-    }
-
-    /* JUMBOTRON */
-    .jumbotron {
-        padding-top: 5em;
-        width: 100vw;
-        height: 123vh;
     }
 
     #line1 {
