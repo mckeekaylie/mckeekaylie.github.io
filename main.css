@@ -8,8 +8,15 @@ h1 {
     font-weight: 600;
 }
 
-.badge {
+/* BUTTONS */
+.btn-primary, .btn-primary:visited {
     background-color: #552FA7;
+    border-color: transparent;
+}
+
+.btn-primary:hover, .btn-primary:active {
+    background-color: #4657FF;
+    border-color: transparent;
 }
 
 /* NAVBAR */
